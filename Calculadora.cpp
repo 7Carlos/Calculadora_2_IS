@@ -1,7 +1,10 @@
-#include<iostream>
 #include<math.h>
 
 using namespace std;
+<<<<<<< Updated upstream
+=======
+void Coseno(double);
+>>>>>>> Stashed changes
 void Tangente(double);
 void arcoTangente(double);
 
@@ -21,6 +24,7 @@ main()
          case 'a':
             break;
          case 'b':
+                        Coseno(numero);
             break;
          case 'c':
          		Tangente(numero);
@@ -40,6 +44,16 @@ main()
 }
 
 
+<<<<<<< Updated upstream
+=======
+void Coseno (double numero){
+
+double resultado=0;
+resultado = cos(numero);
+cout <<"\n" << resultado;
+
+}
+>>>>>>> Stashed changes
 void Tangente (double numero){
 
 double resultado=0;
@@ -54,4 +68,8 @@ double resultado=0;
 resultado = atan(numero);
 cout <<"\n" << resultado;
 
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
