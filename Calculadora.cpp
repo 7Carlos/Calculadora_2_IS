@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void arcoseno (double numero);
+
 main()
 {
    char opcion;
@@ -33,4 +35,10 @@ main()
             cout << "Elija una opcion correcta";
    }
 
+}
+
+void arcoseno (double numero)
+{
+    double resultado = asin(numero);
+    cout << "\n" <<resultado;
 }
