@@ -4,7 +4,7 @@
 using namespace std;
 <<<<<<< Updated upstream
 =======
-float funcionSeno(float Entrada);
+float Seno(float Entrada);
 void Coseno(double);
 >>>>>>> Stashed changes
 void Tangente(double);
@@ -52,7 +52,7 @@ main()
 
 <<<<<<< Updated upstream
 =======
-float funcionSeno(Entrada){
+float Seno(Entrada){
 	float Salida;
 	
 	Salida =  sin(Entrada);
