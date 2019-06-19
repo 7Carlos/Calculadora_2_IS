@@ -4,6 +4,7 @@
 using namespace std;
 <<<<<<< Updated upstream
 =======
+float funcionSeno(float Entrada);
 void Coseno(double);
 >>>>>>> Stashed changes
 void Tangente(double);
@@ -25,6 +26,7 @@ main()
    switch(opcion)
    {
          case 'a':
+            cout<<Seno(Entrada);
             break;
          case 'b':
                     Coseno(numero);
@@ -50,6 +52,14 @@ main()
 
 <<<<<<< Updated upstream
 =======
+float funcionSeno(Entrada){
+	float Salida;
+	
+	Salida =  sin(Entrada);
+	
+	return Salida;
+}
+
 void Coseno (double numero){
 
 double resultado=0;
