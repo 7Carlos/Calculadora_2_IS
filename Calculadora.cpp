@@ -8,6 +8,7 @@ void Coseno(double);
 >>>>>>> Stashed changes
 void Tangente(double);
 void arcoTangente(double);
+void arcoCoseno(double);
 
 main()
 {
@@ -32,7 +33,7 @@ main()
             break;
          case 'd':
             break;
-         case 'e':
+         case 'e':   arcoCoseno(numero);
             break;
          case 'f':
          		arcoTangente(numero);
@@ -74,3 +75,8 @@ cout <<"\n" << resultado;
 =======
 }
 >>>>>>> Stashed changes
+
+void arcoCoseno(double numero)
+{
+   cout << "\n" << acos(numero);
+}
