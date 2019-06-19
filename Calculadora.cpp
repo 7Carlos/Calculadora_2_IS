@@ -2,11 +2,9 @@
 #include<math.h>
 
 using namespace std;
-<<<<<<< Updated upstream
-=======
+
 float Seno(float Entrada);
 void Coseno(double);
->>>>>>> Stashed changes
 void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
@@ -49,14 +47,11 @@ main()
 
 }
 
-
-<<<<<<< Updated upstream
-=======
 float Seno(Entrada){
 	float Salida;
-	
+
 	Salida =  sin(Entrada);
-	
+
 	return Salida;
 }
 
@@ -67,7 +62,7 @@ resultado = cos(numero);
 cout <<"\n" << resultado;
 
 }
->>>>>>> Stashed changes
+
 void Tangente (double numero){
 
 double resultado=0;
@@ -82,11 +77,9 @@ double resultado=0;
 resultado = atan(numero);
 cout <<"\n" << resultado;
 
-<<<<<<< Updated upstream
 }
-=======
+
 }
->>>>>>> Stashed changes
 
 void arcoCoseno(double numero)
 {
