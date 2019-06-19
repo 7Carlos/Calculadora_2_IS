@@ -2,6 +2,8 @@
 #include<math.h>
 
 using namespace std;
+void Tangente(double);
+void arcoTangente(double);
 
 main()
 {
@@ -21,16 +23,35 @@ main()
          case 'b':
             break;
          case 'c':
+         		Tangente(numero);
             break;
          case 'd':
             break;
          case 'e':
             break;
          case 'f':
+         		arcoTangente(numero);
             break;
 
          default:
             cout << "Elija una opcion correcta";
    }
+
+}
+
+
+void Tangente (double numero){
+
+double resultado=0;
+resultado = tan(numero);
+cout <<"\n" << resultado;
+
+}
+
+void arcoTangente (double numero){
+
+double resultado=0;
+resultado = atan(numero);
+cout <<"\n" << resultado;
 
 }
