@@ -9,6 +9,7 @@ void Coseno(double);
 void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
+void arcoSeno(double);
 
 main()
 {
@@ -26,17 +27,18 @@ main()
          case 'a':
             break;
          case 'b':
-                        Coseno(numero);
+                    Coseno(numero);
             break;
          case 'c':
-         		Tangente(numero);
+         			Tangente(numero);
             break;
          case 'd':
+         			arcoSeno(numero);
             break;
-         case 'e':   arcoCoseno(numero);
+         case 'e':  arcoCoseno(numero);
             break;
          case 'f':
-         		arcoTangente(numero);
+         		 	arcoTangente(numero);
             break;
 
          default:
@@ -81,7 +83,7 @@ void arcoCoseno(double numero)
    cout << "\n" << acos(numero);
 }
 
-void arcoseno (double numero)
+void arcoSeno (double numero)
 {
     double resultado = asin(numero);
     cout << "\n" <<resultado;
