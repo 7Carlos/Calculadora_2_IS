@@ -80,3 +80,9 @@ void arcoCoseno(double numero)
 {
    cout << "\n" << acos(numero);
 }
+
+void arcoseno (double numero)
+{
+    double resultado = asin(numero);
+    cout << "\n" <<resultado;
+}
