@@ -51,6 +51,7 @@ main()
          case 'h':
                   cout << "\n\ningrese el siguiente numero:  ";
                   cin >> numero2;
+                  Resta(numero,numero2);
             break;
 
          case 'i':
@@ -113,4 +114,10 @@ void arcoSeno (double numero)
 {
     double resultado = asin(numero);
     cout << "\n" <<resultado;
+}
+
+void Resta (double numero, double numero2)
+{
+   double resultado = numero - numero2;
+   cout << "\n" <<resultado;
 }
