@@ -3,28 +3,35 @@
 
 using namespace std;
 
-float Seno(float Entrada);
+void Seno(double);
 void Coseno(double);
 void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
 
+void Division(double, double);
+void Resta (double numero, double numero2);
+void multiplicacion(double, double);
+void Suma(double, double);
+void Absoluto( double );
+
 main()
 {
    char opcion;
    double numero;
+   double numero2;
 
    cout << "Ingrese un numero: ";
    cin >> numero;
 
-   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n\n";
+   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n g) Suma \n h) Resta \n i) Multiplicacion \n j) Division \n k) Valor absoluto";
    cin >> opcion;
 
    switch(opcion)
    {
          case 'a':
-            cout<<Seno(Entrada);
+            Seno(numero);
             break;
          case 'b':
                     Coseno(numero);
@@ -40,6 +47,33 @@ main()
          case 'f':
          		 	arcoTangente(numero);
             break;
+         case 'g':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+                  Suma(numero, numero2);
+            break;
+
+         case 'h':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+                  Resta(numero,numero2);
+            break;
+
+         case 'i':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+                  multiplicacion(numero, numero2);
+            break;
+
+         case 'j':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+                  Division(numero,numero2);
+            break;
+
+         case 'k':
+                  Absoluto(numero);
+            break;
 
          default:
             cout << "Elija una opcion correcta";
@@ -47,12 +81,9 @@ main()
 
 }
 
-float Seno(Entrada){
-	float Salida;
-
-	Salida =  sin(Entrada);
-
-	return Salida;
+void Seno( double Entrada){
+	Entrada =  sin(Entrada);
+	cout<<Entrada;
 }
 
 void Coseno (double numero){
@@ -79,8 +110,6 @@ cout <<"\n" << resultado;
 
 }
 
-}
-
 void arcoCoseno(double numero)
 {
    cout << "\n" << acos(numero);
@@ -90,4 +119,31 @@ void arcoSeno (double numero)
 {
     double resultado = asin(numero);
     cout << "\n" <<resultado;
+}
+
+void Resta (double numero, double numero2)
+{
+   double resultado = numero - numero2;
+   cout << "\n" <<resultado;
+}
+
+void multiplicacion(double numero, double numero1){
+	numero = numero * numero1;
+	cout<<"El resultado de la multiplicacion es: "<<numero<<endl;
+}
+
+void Suma(double n1, double n2)
+{
+   cout << "La suma es: " << n1 + n2;
+}
+
+void Absoluto(double numero)
+{
+   cout << "El absoluto es: " << abs((int)numero);
+}
+
+void Division (double numero, double numero2)
+{
+   double resultado = numero / numero2;
+   cout << "\n" <<resultado;
 }
