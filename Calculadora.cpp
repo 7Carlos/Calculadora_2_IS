@@ -72,9 +72,11 @@ main()
          case 'j':
                   cout << "\n\ningrese el siguiente numero:  ";
                   cin >> numero2;
+                   Division(numero,numero2);
             break;
 
          case 'k':
+                  vAbsoluto(numero);
             break;
 
          default:
@@ -164,3 +166,9 @@ void Absoluto(double numero)
    cout << "El absoluto es: " << abs(numero);
 }
 >>>>>>> Develop
+
+void Division (double numero, double numero2)
+{
+   double resultado = numero / numero2;
+   cout << "\n" <<resultado;
+}
