@@ -3,7 +3,7 @@
 
 using namespace std;
 
-float Seno(float);
+void Seno(double);
 void Coseno(double);
 void Tangente(double);
 void arcoTangente(double);
@@ -36,7 +36,7 @@ main()
    switch(opcion)
    {
          case 'a':
-            cout << Seno(numero);
+            Seno(numero);
             break;
          case 'b':
                     Coseno(numero);
@@ -67,6 +67,7 @@ main()
          case 'i':
                   cout << "\n\ningrese el siguiente numero:  ";
                   cin >> numero2;
+                  multiplicacion(numero, numero2);
             break;
 
          case 'j':
@@ -85,12 +86,9 @@ main()
 
 }
 
-float Seno( float Entrada){
-	float Salida;
-
-	Salida =  sin(Entrada);
-
-	return Salida;
+void Seno( double Entrada){
+	Entrada =  sin(Entrada);
+	cout<<Entrada;
 }
 
 void Coseno (double numero){
@@ -136,16 +134,9 @@ void Resta (double numero, double numero2)
 <<<<<<< HEAD
 <<<<<<< HEAD
 
-void multiplicacion(){
-	float numero1, numero2, resultado;
-	cout<<"Ingresa el primer numero: ";
-	cin>>numero1;
-	cout<<endl;
-	cout<<"Ingresa el segundo numero: ";
-	cin>>numero2;
-	cout<<endl;
-	resultado = numero1 * numero2;
-	cout<<"El resultado de la multiplicacion es: "<<resultado<<endl;
+void multiplicacion(double numero, double numero1){
+	numero = numero * numero1;
+	cout<<"El resultado de la multiplicacion es: "<<numero<<endl;
 }
 =======
 =======
