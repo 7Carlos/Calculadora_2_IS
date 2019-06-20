@@ -9,8 +9,8 @@ void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
-
-
+void Resta (double numero, double numero2);
+void multiplicacion();
 
 main()
 {
@@ -120,4 +120,16 @@ void Resta (double numero, double numero2)
 {
    double resultado = numero - numero2;
    cout << "\n" <<resultado;
+}
+
+void multiplicacion(){
+	float numero1, numero2, resultado;
+	cout<<"Ingresa el primer numero: ";
+	cin>>numero1;
+	cout<<endl;
+	cout<<"Ingresa el segundo numero: ";
+	cin>>numero2;
+	cout<<endl;
+	resultado = numero1 * numero2;
+	cout<<"El resultado de la multiplicacion es: "<<resultado<<endl;
 }
