@@ -3,28 +3,31 @@
 
 using namespace std;
 
-float Seno(float Entrada);
+float Seno(float);
 void Coseno(double);
 void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
 
+
+
 main()
 {
    char opcion;
    double numero;
+   double numero2;
 
    cout << "Ingrese un numero: ";
    cin >> numero;
 
-   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n\n";
+   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n g) Suma \n h) Resta \n i) Multiplicacion \n j) Division \n k) Valor absoluto";
    cin >> opcion;
 
    switch(opcion)
    {
          case 'a':
-            cout<<Seno(Entrada);
+            cout << Seno(numero);
             break;
          case 'b':
                     Coseno(numero);
@@ -40,6 +43,28 @@ main()
          case 'f':
          		 	arcoTangente(numero);
             break;
+         case 'g':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+            break;
+
+         case 'h':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+            break;
+
+         case 'i':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+            break;
+
+         case 'j':
+                  cout << "\n\ningrese el siguiente numero:  ";
+                  cin >> numero2;
+            break;
+
+         case 'k':
+            break;
 
          default:
             cout << "Elija una opcion correcta";
@@ -47,7 +72,7 @@ main()
 
 }
 
-float Seno(Entrada){
+float Seno( float Entrada){
 	float Salida;
 
 	Salida =  sin(Entrada);
@@ -76,8 +101,6 @@ void arcoTangente (double numero){
 double resultado=0;
 resultado = atan(numero);
 cout <<"\n" << resultado;
-
-}
 
 }
 
