@@ -15,6 +15,10 @@ void multiplicacion();
 =======
 
 void Suma(double, double);
+<<<<<<< HEAD
+>>>>>>> Develop
+=======
+void Absoluto( double );
 >>>>>>> Develop
 
 main()
@@ -128,6 +132,7 @@ void Resta (double numero, double numero2)
    cout << "\n" <<resultado;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 void multiplicacion(){
 	float numero1, numero2, resultado;
@@ -141,11 +146,21 @@ void multiplicacion(){
 	cout<<"El resultado de la multiplicacion es: "<<resultado<<endl;
 }
 =======
+=======
+
+>>>>>>> Develop
 void Suma(double n1, double n2)
 {
    cout << "La suma es: " << n1 + n2;
 }
 
+<<<<<<< HEAD
 
 
+>>>>>>> Develop
+=======
+void Absoluto(double numero)
+{
+   cout << "El absoluto es: " << abs(numero);
+}
 >>>>>>> Develop
