@@ -9,17 +9,12 @@ void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
-<<<<<<< HEAD
-void Resta (double numero, double numero2);
-void multiplicacion();
-=======
 
+void Division(double, double);
+void Resta (double numero, double numero2);
+void multiplicacion(double, double);
 void Suma(double, double);
-<<<<<<< HEAD
->>>>>>> Develop
-=======
 void Absoluto( double );
->>>>>>> Develop
 
 main()
 {
@@ -73,11 +68,11 @@ main()
          case 'j':
                   cout << "\n\ningrese el siguiente numero:  ";
                   cin >> numero2;
-                   Division(numero,numero2);
+                  Division(numero,numero2);
             break;
 
          case 'k':
-                  vAbsoluto(numero);
+                  Absoluto(numero);
             break;
 
          default:
@@ -131,32 +126,21 @@ void Resta (double numero, double numero2)
    double resultado = numero - numero2;
    cout << "\n" <<resultado;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 void multiplicacion(double numero, double numero1){
 	numero = numero * numero1;
 	cout<<"El resultado de la multiplicacion es: "<<numero<<endl;
 }
-=======
-=======
 
->>>>>>> Develop
 void Suma(double n1, double n2)
 {
    cout << "La suma es: " << n1 + n2;
 }
 
-<<<<<<< HEAD
-
-
->>>>>>> Develop
-=======
 void Absoluto(double numero)
 {
-   cout << "El absoluto es: " << abs(numero);
+   cout << "El absoluto es: " << abs((int)numero);
 }
->>>>>>> Develop
 
 void Division (double numero, double numero2)
 {
