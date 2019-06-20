@@ -10,7 +10,7 @@ void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
 
-
+void Suma(double, double);
 
 main()
 {
@@ -46,6 +46,7 @@ main()
          case 'g':
                   cout << "\n\ningrese el siguiente numero:  ";
                   cin >> numero2;
+                  Suma(numero, numero2);
             break;
 
          case 'h':
@@ -121,3 +122,10 @@ void Resta (double numero, double numero2)
    double resultado = numero - numero2;
    cout << "\n" <<resultado;
 }
+void Suma(double n1, double n2)
+{
+   cout << "La suma es: " << n1 + n2;
+}
+
+
+
