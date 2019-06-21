@@ -19,16 +19,33 @@ void multiplicacion(double, double);
 void Suma(double, double);
 void Absoluto( double );
 
+void funcionExponencial(double);
+void Logaritmo10(double);
+void chicharronera(double, double, double);
+
 main()
 {
    char opcion;
    double numero;
    double numero2;
+   double numero3;
 
    cout << "Ingrese un numero: ";
    cin >> numero;
 
-   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n g) Suma \n h) Resta \n i) Multiplicacion \n j) Division \n k) Valor absoluto";
+   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n g) Suma \n h) Resta \n i) Multiplicacion \n j) Division \n k) Valor absoluto\n";
+   cout << "l) Funcion exponencial\n";
+   cout << "m) Logaritmo natural\n";
+   cout << "n) Logaritmo base 10\n";
+   cout << "o) Funcion exponencial\n";
+   cout << "p) 1/x\n";
+   cout << "q) x^2\n";
+   cout << "r) x^3\n";
+   cout << "s) x^y\n";
+   cout << "t) x!\n";
+   cout << "u) Raiz cuadrada de x\n";
+   cout << "v) Resolucion cuadratica\n\n";
+
    cin >> opcion;
 
    switch(opcion)
@@ -76,6 +93,48 @@ main()
 
          case 'k':
                   Absoluto(numero);
+            break;
+
+         case 'l':
+         			funcionExponencial(numero);
+            break;
+
+         case 'm':
+         			Logaritmo10(numero);
+            break;
+
+         case 'n':
+            break;
+
+         case 'o':
+            break;
+
+         case 'p':
+            break;
+
+         case 'q':
+            break;
+
+         case 'r':
+            break;
+
+         case 's':
+            break;
+
+         case 't':
+            break;
+
+         case 'u':
+            break;
+
+         case 'v':
+            cout<<"Ingresa a: ";
+            cin>>numero;
+            cout<<endl<<"Ingresa b: ";
+            cin>>numero2;
+            cout<<endl<<"Ingresa c: ";
+            cin>>numero3;
+            chicharronera(a,b,c);
             break;
 
          default:
@@ -151,6 +210,7 @@ void Division (double numero, double numero2)
    cout << "\n" <<resultado;
 }
 
+<<<<<<< HEAD
 void Inverso (double numero)
 {
    double resultado = 1/ numero;
@@ -165,6 +225,36 @@ void Cubo (double numero)
 {
    double resultado = numero*numero*numero;
    cout << "\n" <<resultado;
+=======
+void funcionExponencial (double numero){
+
+cout<<"Exponencial: " << exp(numero);
+
+}
+
+void Logaritmo10 (double numero){
+
+cout<<"Logaritmo de 10: " << log10(numero);
+
+}
+
+void chicharronera(double a, double b, double c){
+	double resultado1, resultado2, indefinido;
+	indefinido = pow(b,2)-(4*a*c);
+	if (indefinido>0){
+		resultado1 = (-b + (sqrt(pow(b,2)-(4*a*c))))/(2*a);
+	
+		resultado2 = (-b - (sqrt(pow(b,2)-(4*a*c))))/(2*a);
+
+		cout<<"Resultado '+': "<<resultado1<<endl;
+	
+		cout<<"Resultado '-': "<<resultado2<<endl;
+	}
+	else {
+		cout<<"No hay solucion."<<endl;
+	}
+	
+>>>>>>> Develop
 }
 
 
