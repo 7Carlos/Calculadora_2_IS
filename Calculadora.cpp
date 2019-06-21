@@ -16,6 +16,8 @@ void multiplicacion(double, double);
 void Suma(double, double);
 void Absoluto( double );
 
+void XPotenciaY(double, double);
+
 main()
 {
    char opcion;
@@ -191,4 +193,9 @@ void Division (double numero, double numero2)
 {
    double resultado = numero / numero2;
    cout << "\n" <<resultado;
+}
+
+void XPotenciaY( double numero1, double numero2)
+{
+   cout << "La potencia es: " << pow(x,y);
 }
