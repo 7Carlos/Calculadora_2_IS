@@ -119,7 +119,10 @@ main()
          case 'q': Cubo(numero);
             break;
 
-         case 'r': XPotenciaY(numero, numero2);
+         case 'r':
+                  cout << "\n Ingrese el segundo numero";
+                  cin >> numero2;
+                  XPotenciaY(numero, numero2);
             break;
 
          case 's':
