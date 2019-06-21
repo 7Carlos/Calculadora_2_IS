@@ -9,6 +9,9 @@ void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
+void Inverso(double);
+void Cuadrado(double);
+void Cubo(double);
 
 void Division(double, double);
 void Resta (double numero, double numero2);
@@ -19,6 +22,9 @@ void Absoluto( double );
 void funcionExponencial(double);
 void Logaritmo10(double);
 void chicharronera(double, double, double);
+
+void XPotenciaY(double, double);
+void RaizCuadrada( double );
 
 main()
 {
@@ -106,22 +112,22 @@ main()
          case 'o':
             break;
 
-         case 'p':
+         case 'p': Inverso(numero);
             break;
 
-         case 'q':
+         case 'q': Cuadrado(numero);
             break;
 
-         case 'r':
+         case 'r': Cubo(numero);
             break;
 
-         case 's':
+         case 's': XPotenciaY(numero, numero2);
             break;
 
          case 't':
             break;
 
-         case 'u':
+         case 'u': RaizCuadrada(numero);
             break;
 
          case 'v':
@@ -207,6 +213,20 @@ void Division (double numero, double numero2)
    cout << "\n" <<resultado;
 }
 
+void Inverso (double numero)
+{
+   double resultado = 1/ numero;
+   cout << "\n" <<resultado;
+}
+void Cuadrado (double numero)
+{
+   double resultado =  numero*numero;
+   cout << "\n" <<resultado;
+}
+void Cubo (double numero)
+{
+   double resultado = numero*numero*numero;
+   cout << "\n" <<resultado;
 void funcionExponencial (double numero){
 
 cout<<" Exponencial: " << exp(numero);
@@ -224,17 +244,26 @@ void chicharronera(double a, double b, double c){
 	indefinido = pow(b,2)-(4*a*c);
 	if (indefinido>0){
 		resultado1 = (-b + (sqrt(pow(b,2)-(4*a*c))))/(2*a);
-	
+
 		resultado2 = (-b - (sqrt(pow(b,2)-(4*a*c))))/(2*a);
 
 		cout<<"Resultado '+': "<<resultado1<<endl;
-	
+
 		cout<<"Resultado '-': "<<resultado2<<endl;
 	}
 	else {
 		cout<<"No hay solucion."<<endl;
 	}
-	
+
 }
 
+void RaizCuadrada( double numero )
+{
+   cout << "La raiz cuadrada es: " << sqrt(numero);
+}
+
+void XPotenciaY( double numero1, double numero2)
+{
+   cout << "La potencia es: " << pow(x,y);
+}
 
