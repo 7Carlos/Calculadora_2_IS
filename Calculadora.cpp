@@ -9,6 +9,9 @@ void Tangente(double);
 void arcoTangente(double);
 void arcoCoseno(double);
 void arcoSeno(double);
+void Inverso(double);
+void Cuadrado(double);
+void Cubo(double);
 
 void Division(double, double);
 void Resta (double numero, double numero2);
@@ -147,3 +150,21 @@ void Division (double numero, double numero2)
    double resultado = numero / numero2;
    cout << "\n" <<resultado;
 }
+
+void Inverso (double numero)
+{
+   double resultado = 1/ numero;
+   cout << "\n" <<resultado;
+}
+void Cuadrado (double numero)
+{
+   double resultado =  numero*numero;
+   cout << "\n" <<resultado;
+}
+void Cubo (double numero)
+{
+   double resultado = numero*numero*numero;
+   cout << "\n" <<resultado;
+}
+
+
