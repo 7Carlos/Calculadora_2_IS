@@ -137,7 +137,7 @@ main()
             cin>>numero2;
             cout<<endl<<"Ingresa c: ";
             cin>>numero3;
-            chicharronera(a,b,c);
+            chicharronera(numero,numero2,numero3);
             break;
 
          default:
@@ -227,6 +227,8 @@ void Cubo (double numero)
 {
    double resultado = numero*numero*numero;
    cout << "\n" <<resultado;
+}
+
 void funcionExponencial (double numero){
 
 cout<<" Exponencial: " << exp(numero);
@@ -264,6 +266,6 @@ void RaizCuadrada( double numero )
 
 void XPotenciaY( double numero1, double numero2)
 {
-   cout << "La potencia es: " << pow(x,y);
+   cout << "La potencia es: " << pow(numero1,numero2);
 }
 
