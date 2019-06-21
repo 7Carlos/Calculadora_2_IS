@@ -16,6 +16,9 @@ void multiplicacion(double, double);
 void Suma(double, double);
 void Absoluto( double );
 
+void funcionExponencial(double);
+void Logaritmo10(double);
+
 main()
 {
    char opcion;
@@ -87,37 +90,39 @@ main()
                   Absoluto(numero);
             break;
 
-         case 'l'
+         case 'l':
+         			funcionExponencial(numero);
             break;
 
-         case 'm'
+         case 'm':
+         			Logaritmo10(numero);
             break;
 
-         case 'n'
+         case 'n':
             break;
 
-         case 'o'
+         case 'o':
             break;
 
-         case 'p'
+         case 'p':
             break;
 
-         case 'q'
+         case 'q':
             break;
 
-         case 'r'
+         case 'r':
             break;
 
-         case 's'
+         case 's':
             break;
 
-         case 't'
+         case 't':
             break;
 
-         case 'u'
+         case 'u':
             break;
 
-         case 'v'
+         case 'v':
             break;
 
          default:
@@ -192,3 +197,16 @@ void Division (double numero, double numero2)
    double resultado = numero / numero2;
    cout << "\n" <<resultado;
 }
+
+void funcionExponencial (double numero){
+
+cout<<"Exponencial: " << exp(numero);
+
+}
+
+void Logaritmo10 (double numero){
+
+cout<<"Logaritmo de 10: " << log10(numero);
+
+}
+
