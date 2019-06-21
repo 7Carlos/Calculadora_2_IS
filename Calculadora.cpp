@@ -209,13 +209,13 @@ void Division (double numero, double numero2)
 
 void funcionExponencial (double numero){
 
-cout<<"Exponencial: " << exp(numero);
+cout<<" Exponencial: " << exp(numero);
 
 }
 
 void Logaritmo10 (double numero){
 
-cout<<"Logaritmo de 10: " << log10(numero);
+cout<<" Logaritmo de 10: " << log10(numero);
 
 }
 
