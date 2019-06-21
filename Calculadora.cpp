@@ -23,6 +23,8 @@ void funcionExponencial(double);
 void Logaritmo10(double);
 void chicharronera(double, double, double);
 
+void XPotenciaY(double, double);
+
 main()
 {
    char opcion;
@@ -210,7 +212,6 @@ void Division (double numero, double numero2)
    cout << "\n" <<resultado;
 }
 
-<<<<<<< HEAD
 void Inverso (double numero)
 {
    double resultado = 1/ numero;
@@ -225,7 +226,6 @@ void Cubo (double numero)
 {
    double resultado = numero*numero*numero;
    cout << "\n" <<resultado;
-=======
 void funcionExponencial (double numero){
 
 cout<<" Exponencial: " << exp(numero);
@@ -254,7 +254,11 @@ void chicharronera(double a, double b, double c){
 		cout<<"No hay solucion."<<endl;
 	}
 	
->>>>>>> Develop
 }
 
 
+
+void XPotenciaY( double numero1, double numero2)
+{
+   cout << "La potencia es: " << pow(x,y);
+}
