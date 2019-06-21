@@ -41,14 +41,13 @@ main()
    cout << "l) Funcion exponencial\n";
    cout << "m) Logaritmo natural\n";
    cout << "n) Logaritmo base 10\n";
-   cout << "o) Funcion exponencial\n";
-   cout << "p) 1/x\n";
-   cout << "q) x^2\n";
-   cout << "r) x^3\n";
-   cout << "s) x^y\n";
-   cout << "t) x!\n";
-   cout << "u) Raiz cuadrada de x\n";
-   cout << "v) Resolucion cuadratica\n\n";
+   cout << "o) 1/x\n";
+   cout << "p) x^2\n";
+   cout << "q) x^3\n";
+   cout << "r) x^y\n";
+   cout << "s) x!\n";
+   cout << "t) Raiz cuadrada de x\n";
+   cout << "u) Resolucion cuadratica\n\n";
 
    cin >> opcion;
 
@@ -111,29 +110,26 @@ main()
                   Logaritmo10(numero);
             break;
 
-         case 'o':
+         case 'o': Inverso(numero);
             break;
 
-         case 'p': Inverso(numero);
+         case 'p': Cuadrado(numero);
             break;
 
-         case 'q': Cuadrado(numero);
+         case 'q': Cubo(numero);
             break;
 
-         case 'r': Cubo(numero);
+         case 'r': XPotenciaY(numero, numero2);
             break;
 
-         case 's': XPotenciaY(numero, numero2);
-            break;
-
-         case 't':
+         case 's':
                   Factorial(numero);
             break;
 
-         case 'u': RaizCuadrada(numero);
+         case 't': RaizCuadrada(numero);
             break;
 
-         case 'v':
+         case 'u':
             cout<<"Ingresa a: ";
             cin>>numero;
             cout<<endl<<"Ingresa b: ";
@@ -289,7 +285,7 @@ void Factorial (double numero)
    cout<<"\n El Factorial de " <<numero <<" es " <<factorial;
 
 }
-   
+
 /* Funcion Logaritmo Natural */
 void LogaritmoNatural (double numero)
 {
