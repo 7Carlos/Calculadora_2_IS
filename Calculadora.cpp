@@ -18,12 +18,14 @@ void Absoluto( double );
 
 void funcionExponencial(double);
 void Logaritmo10(double);
+void chicharronera(double, double, double);
 
 main()
 {
    char opcion;
    double numero;
    double numero2;
+   double numero3;
 
    cout << "Ingrese un numero: ";
    cin >> numero;
@@ -123,6 +125,13 @@ main()
             break;
 
          case 'v':
+            cout<<"Ingresa a: ";
+            cin>>numero;
+            cout<<endl<<"Ingresa b: ";
+            cin>>numero2;
+            cout<<endl<<"Ingresa c: ";
+            cin>>numero3;
+            chicharronera(a,b,c);
             break;
 
          default:
@@ -209,4 +218,23 @@ void Logaritmo10 (double numero){
 cout<<"Logaritmo de 10: " << log10(numero);
 
 }
+
+void chicharronera(double a, double b, double c){
+	double resultado1, resultado2, indefinido;
+	indefinido = pow(b,2)-(4*a*c);
+	if (indefinido>0){
+		resultado1 = (-b + (sqrt(pow(b,2)-(4*a*c))))/(2*a);
+	
+		resultado2 = (-b - (sqrt(pow(b,2)-(4*a*c))))/(2*a);
+
+		cout<<"Resultado '+': "<<resultado1<<endl;
+	
+		cout<<"Resultado '-': "<<resultado2<<endl;
+	}
+	else {
+		cout<<"No hay solucion."<<endl;
+	}
+	
+}
+
 
