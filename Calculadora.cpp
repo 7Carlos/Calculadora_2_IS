@@ -24,6 +24,7 @@ void Logaritmo10(double);
 void chicharronera(double, double, double);
 
 void XPotenciaY(double, double);
+void RaizCuadrada( double );
 
 main()
 {
@@ -120,13 +121,13 @@ main()
          case 'r': Cubo(numero);
             break;
 
-         case 's':
+         case 's': XPotenciaY(numero, numero2);
             break;
 
          case 't':
             break;
 
-         case 'u':
+         case 'u': RaizCuadrada(numero);
             break;
 
          case 'v':
@@ -243,22 +244,26 @@ void chicharronera(double a, double b, double c){
 	indefinido = pow(b,2)-(4*a*c);
 	if (indefinido>0){
 		resultado1 = (-b + (sqrt(pow(b,2)-(4*a*c))))/(2*a);
-	
+
 		resultado2 = (-b - (sqrt(pow(b,2)-(4*a*c))))/(2*a);
 
 		cout<<"Resultado '+': "<<resultado1<<endl;
-	
+
 		cout<<"Resultado '-': "<<resultado2<<endl;
 	}
 	else {
 		cout<<"No hay solucion."<<endl;
 	}
-	
+
 }
 
-
+void RaizCuadrada( double numero )
+{
+   cout << "La raiz cuadrada es: " << sqrt(numero);
+}
 
 void XPotenciaY( double numero1, double numero2)
 {
    cout << "La potencia es: " << pow(x,y);
 }
+
