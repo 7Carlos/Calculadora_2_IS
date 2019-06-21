@@ -25,7 +25,19 @@ main()
    cout << "Ingrese un numero: ";
    cin >> numero;
 
-   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n g) Suma \n h) Resta \n i) Multiplicacion \n j) Division \n k) Valor absoluto";
+   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n g) Suma \n h) Resta \n i) Multiplicacion \n j) Division \n k) Valor absoluto\n";
+   cout << "l) Funcion exponencial\n";
+   cout << "m) Logaritmo natural\n";
+   cout << "n) Logaritmo base 10\n";
+   cout << "o) Funcion exponencial\n";
+   cout << "p) 1/x\n";
+   cout << "q) x^2\n";
+   cout << "r) x^3\n";
+   cout << "s) x^y\n";
+   cout << "t) x!\n";
+   cout << "u) Raiz cuadrada de x\n";
+   cout << "v) Resolucion cuadratica\n\n";
+
    cin >> opcion;
 
    switch(opcion)
@@ -73,6 +85,39 @@ main()
 
          case 'k':
                   Absoluto(numero);
+            break;
+
+         case 'l'
+            break;
+
+         case 'm'
+            break;
+
+         case 'n'
+            break;
+
+         case 'o'
+            break;
+
+         case 'p'
+            break;
+
+         case 'q'
+            break;
+
+         case 'r'
+            break;
+
+         case 's'
+            break;
+
+         case 't'
+            break;
+
+         case 'u'
+            break;
+
+         case 'v'
             break;
 
          default:
