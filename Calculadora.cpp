@@ -22,6 +22,10 @@ void Absoluto( double );
 void funcionExponencial(double);
 void Logaritmo10(double);
 void chicharronera(double, double, double);
+void LogaritmoNatural (double);
+void Factorial (double);
+void XPotenciaY(double, double);
+void RaizCuadrada( double );
 
 main()
 {
@@ -37,14 +41,13 @@ main()
    cout << "l) Funcion exponencial\n";
    cout << "m) Logaritmo natural\n";
    cout << "n) Logaritmo base 10\n";
-   cout << "o) Funcion exponencial\n";
-   cout << "p) 1/x\n";
-   cout << "q) x^2\n";
-   cout << "r) x^3\n";
-   cout << "s) x^y\n";
-   cout << "t) x!\n";
-   cout << "u) Raiz cuadrada de x\n";
-   cout << "v) Resolucion cuadratica\n\n";
+   cout << "o) 1/x\n";
+   cout << "p) x^2\n";
+   cout << "q) x^3\n";
+   cout << "r) x^y\n";
+   cout << "s) x!\n";
+   cout << "t) Raiz cuadrada de x\n";
+   cout << "u) Resolucion cuadratica\n\n";
 
    cin >> opcion;
 
@@ -100,41 +103,43 @@ main()
             break;
 
          case 'm':
-         			Logaritmo10(numero);
+         			LogaritmoNatural(numero);
             break;
 
          case 'n':
+                  Logaritmo10(numero);
             break;
 
-         case 'o':
+         case 'o': Inverso(numero);
             break;
 
-         case 'p': Inverso(numero);
+         case 'p': Cuadrado(numero);
             break;
 
-         case 'q': Cuadrado(numero);
+         case 'q': Cubo(numero);
             break;
 
-         case 'r': Cubo(numero);
+         case 'r':
+                  cout << "\n Ingrese el segundo numero";
+                  cin >> numero2;
+                  XPotenciaY(numero, numero2);
             break;
 
          case 's':
+                  Factorial(numero);
             break;
 
-         case 't':
+         case 't': RaizCuadrada(numero);
             break;
 
          case 'u':
-            break;
-
-         case 'v':
             cout<<"Ingresa a: ";
             cin>>numero;
             cout<<endl<<"Ingresa b: ";
             cin>>numero2;
             cout<<endl<<"Ingresa c: ";
             cin>>numero3;
-            chicharronera(a,b,c);
+            chicharronera(numero,numero2,numero3);
             break;
 
          default:
@@ -210,7 +215,6 @@ void Division (double numero, double numero2)
    cout << "\n" <<resultado;
 }
 
-<<<<<<< HEAD
 void Inverso (double numero)
 {
    double resultado = 1/ numero;
@@ -225,7 +229,8 @@ void Cubo (double numero)
 {
    double resultado = numero*numero*numero;
    cout << "\n" <<resultado;
-=======
+}
+
 void funcionExponencial (double numero){
 
 cout<<" Exponencial: " << exp(numero);
@@ -243,18 +248,50 @@ void chicharronera(double a, double b, double c){
 	indefinido = pow(b,2)-(4*a*c);
 	if (indefinido>0){
 		resultado1 = (-b + (sqrt(pow(b,2)-(4*a*c))))/(2*a);
-	
+
 		resultado2 = (-b - (sqrt(pow(b,2)-(4*a*c))))/(2*a);
 
 		cout<<"Resultado '+': "<<resultado1<<endl;
-	
+
 		cout<<"Resultado '-': "<<resultado2<<endl;
 	}
 	else {
 		cout<<"No hay solucion."<<endl;
 	}
-	
->>>>>>> Develop
+
 }
 
+void RaizCuadrada( double numero )
+{
+   cout << "La raiz cuadrada es: " << sqrt(numero);
+}
 
+void XPotenciaY( double numero1, double numero2)
+{
+   cout << "La potencia es: " << pow(numero1,numero2);
+}
+
+/* Funcion Factorial */
+void Factorial (double numero)
+{
+   int factorial = 1;
+
+   if (numero<0) factorial = 0;
+
+   else if (numero==0) factorial = 1;
+
+   else{
+      for (int i = 1; i <= numero; i++)
+         factorial = factorial * i;
+      }
+
+   cout<<"\n El Factorial de " <<numero <<" es " <<factorial;
+
+}
+
+/* Funcion Logaritmo Natural */
+void LogaritmoNatural (double numero)
+{
+   double resultado = log(numero);
+   cout<< "\n" <<resultado;
+}
