@@ -109,13 +109,13 @@ main()
          case 'o':
             break;
 
-         case 'p':
+         case 'p': Inverso(numero);
             break;
 
-         case 'q':
+         case 'q': Cuadrado(numero);
             break;
 
-         case 'r':
+         case 'r': Cubo(numero);
             break;
 
          case 's':
