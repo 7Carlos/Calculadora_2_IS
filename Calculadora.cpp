@@ -22,7 +22,8 @@ void Absoluto( double );
 void funcionExponencial(double);
 void Logaritmo10(double);
 void chicharronera(double, double, double);
-
+void LogaritmoNatural (double);
+void Factorial (double);
 void XPotenciaY(double, double);
 void RaizCuadrada( double );
 
@@ -103,10 +104,11 @@ main()
             break;
 
          case 'm':
-         			Logaritmo10(numero);
+         			LogaritmoNatural(numero);
             break;
 
          case 'n':
+                  Logaritmo10(numero);
             break;
 
          case 'o':
@@ -125,6 +127,7 @@ main()
             break;
 
          case 't':
+                  Factorial(numero);
             break;
 
          case 'u': RaizCuadrada(numero);
@@ -269,3 +272,27 @@ void XPotenciaY( double numero1, double numero2)
    cout << "La potencia es: " << pow(numero1,numero2);
 }
 
+/* Funcion Factorial */
+void Factorial (double numero)
+{
+   int factorial = 1;
+
+   if (numero<0) factorial = 0;
+
+   else if (numero==0) factorial = 1;
+
+   else{
+      for (int i = 1; i <= numero; i++)
+         factorial = factorial * i;
+      }
+
+   cout<<"\n El Factorial de " <<numero <<" es " <<factorial;
+
+}
+   
+/* Funcion Logaritmo Natural */
+void LogaritmoNatural (double numero)
+{
+   double resultado = log(numero);
+   cout<< "\n" <<resultado;
+}
